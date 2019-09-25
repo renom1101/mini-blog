@@ -21,7 +21,7 @@ var plugins = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/renat/projects/mini-blog/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Ren Blog","short_name":"RenBlog","description":"Ren Blog. Space to share my experience.","start_url":"/","background_color":"#2b2e3c","theme_color":"#3498DB","display":"standalone","icon":"src/favicon.png"},
+      options: {"plugins":[],"name":"Ren Point","short_name":"RenPoint","description":"Ren Point. Space to share my experience with you.","start_url":"/","background_color":"#2b2e3c","theme_color":"#3498DB","display":"standalone","icon":"src/favicon.png"},
     },{
       plugin: require('/Users/renat/projects/mini-blog/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
