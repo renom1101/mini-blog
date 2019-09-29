@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import styled from "styled-components";
 
-import { Layout, Article, Wrapper, Button, SectionTitle } from "../components";
+import { Layout, Article, Wrapper, SectionTitle } from "../components";
 
 const Content = styled.div`
   grid-column: 2;
