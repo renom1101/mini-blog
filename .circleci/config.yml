@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:10
-    working_directory: ~/gatsby-site
+    working_directory: ~/mini-blog
     steps:
       - checkout
       - restore_cache:
