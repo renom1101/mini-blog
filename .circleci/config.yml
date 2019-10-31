@@ -7,18 +7,18 @@ jobs:
     steps:
       - checkout
       - restore_cache:
+          name: Restore Yarn Package Cache
           keys:
-            # Find a cache corresponding to this specific package-lock.json
-            - v1-npm-deps-{{ checksum "package-lock.json" }}
-            # Fallback cache to be used
-            - v1-npm-deps-
+            - yarn-packages-{{ checksum "yarn.lock" }}
+            - yarn-packages-
       - run:
           name: Install Dependencies
-          command: npm install
+          command: yarn
       - save_cache:
-          key: v1-npm-deps-{{ checksum "package-lock.json" }}
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
-            - ./node_modules
+            - ~/.cache/yarn
       - run:
           name: Gatsby Build
           command: npm run build
