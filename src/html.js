@@ -11,11 +11,6 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-FM3DVD483C"
-        ></script>
-        <script src="./scripts/gtag-config.js"></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

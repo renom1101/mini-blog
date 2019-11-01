@@ -74,6 +74,20 @@ module.exports = {
       }
     },
     "gatsby-plugin-offline",
-    "gatsby-plugin-netlify"
+    "gatsby-plugin-netlify",
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-FM3DVD483C"],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true
+        }
+      }
+    }
   ]
 };
